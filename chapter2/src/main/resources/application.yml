@@ -1,0 +1,34 @@
+spring:
+  application:
+    name: "chapter2"
+  profiles:
+    active: "development"
+
+service:
+  message:
+    type: "simple"
+    text: "hello"
+one:
+  value: 10
+another:
+  value: 20
+---
+spring:
+  config:
+    activate:
+      on-profile: "development"
+
+service:
+  message:
+    text: "hi"
+
+---
+spring:
+  config:
+    activate:
+      on-profile: "production"
+
+service:
+  message:
+    type: "advance"
+    text: "welcome"
