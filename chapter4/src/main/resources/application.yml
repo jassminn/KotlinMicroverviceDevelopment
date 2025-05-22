@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: chapter4
+  jackson:
+    default-propertyinclusion: NON_NULL
