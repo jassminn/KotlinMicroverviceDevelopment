@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: chapter5
+  jackson:
+    default-property-inclusion: NON_NULL
+  data:
+    mongodb:
+      #uri: "mongodb://localhost:27017"
+      host: localhost
+      port: 27017
+      database: "microservices"
+      username: "kotlin"
+      password: "1234"
+      authentication-database: "microservices"
+
