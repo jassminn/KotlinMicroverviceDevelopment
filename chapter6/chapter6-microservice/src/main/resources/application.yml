@@ -1,0 +1,11 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: chapter6-microservice
+  config:
+    import: configserver:http://localhost:8888
+  cloud:
+    config:
+      profile: production
+

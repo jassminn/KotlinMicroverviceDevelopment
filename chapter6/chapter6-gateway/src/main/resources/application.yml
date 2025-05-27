@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: chapter6-gateway
+  cloud:
+    zookeeper:
+      connect-string: localhost:2181
+    gateway:
+      routes:
+        - id: greetings
+          uri: lb://greetings
+          predicates:
+            - Path=/services/**
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
